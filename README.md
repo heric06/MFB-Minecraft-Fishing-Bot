@@ -12,7 +12,7 @@ Debian based:
   `sudo apt-get install xdotool`
 MacOSX:
   install brew [see: <https://brew.sh/>]
-  `brew install xdotool`
+  `brew install xdotool` 
 
 # Usage:
 mfb [OPTIONS] [TIME]
