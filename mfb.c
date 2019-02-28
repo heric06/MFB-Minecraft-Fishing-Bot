@@ -35,7 +35,7 @@ int main(int argc, char** argv)
 		{"hour",	required_argument,	NULL, 'h'},
 		{"nolim",	no_argument,		NULL, 'i'},
 		{"help", 	no_argument, 		NULL,  0 },
-		{"version", no_argument,		NULL, 'v'},
+		{"version", 	no_argument,		NULL, 'v'},
 		{NULL, 0, NULL, 0}
 	};
 
