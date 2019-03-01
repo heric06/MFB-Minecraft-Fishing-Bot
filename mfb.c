@@ -7,14 +7,14 @@
 
 #define TOOL	"xdotool"
 #define PROGRAM	"Minecraft Fishing Bot - MFB"
-#define VERSION "1.04"
-#define DROP_HH	235
+#define VERSION "1.05"
+#define DROP_HH	322
 
 #define CLICK_L	1
 #define CLICK_C	2
 #define CLICK_R	3
 
-unsigned int fish();
+void fish();
 void help_msg(char* __exe);
 
 int main(int argc, char** argv)
@@ -35,7 +35,7 @@ int main(int argc, char** argv)
 		{"hour",	required_argument,	NULL, 'h'},
 		{"nolim",	no_argument,		NULL, 'i'},
 		{"help", 	no_argument, 		NULL,  0 },
-		{"version", 	no_argument,		NULL, 'v'},
+		{"version", no_argument,		NULL, 'v'},
 		{NULL, 0, NULL, 0}
 	};
 
@@ -89,13 +89,14 @@ int main(int argc, char** argv)
 			fflush(stdout);
 			sleep(1);
 		}
-		printf("\n[fishing]\n");
+		printf("\rStarting bot in %d s \n[fishing]\n", i);
 	
 		if(nolim){
 			while(true){
 				printf("\rActivity: %.2d:%.2d:%.2d", expired/3600, (expired/60)%60, expired%60);
 				fflush(stdout);
-				expired += fish();
+				fish();
+				expired++;
 			}
 		}
 		else
@@ -103,7 +104,8 @@ int main(int argc, char** argv)
 			do{
 				printf("\rRemaining: %.2d:%.2d:%.2d", (time-expired)/3600, ((time-expired)/60)%60, (time-expired)%60);
 				fflush(stdout);
-				expired += fish();
+				fish();
+				expired++;
 			}
 			while(expired < time);
 			printf("\n");
@@ -126,27 +128,22 @@ Options:\n\
 ", __exe);
 }
 
-unsigned int fish()
+void fish()
 {
 	char* cmd = malloc(30U*sizeof(char));
-	unsigned int expired = 0;
 	
 	sprintf(cmd, "%s click %d", TOOL, CLICK_R);
 	system(cmd);
-	expired += 1;
-	sleep(1);
+	usleep(340000);
 	
 	sprintf(cmd, "%s mousedown %d", TOOL, CLICK_R);
 	system(cmd);
-	expired += 1;
-	sleep(1);
+	usleep(330000);
 	
 	sprintf(cmd, "%s mouseup %d", TOOL, CLICK_R);
 	system(cmd);
-	expired += 1;
-	sleep(1);
+	usleep(330000);
 	
 	free(cmd);
-	return expired;
 }
  
