@@ -24,11 +24,11 @@ How to
     
 Installation
 ------------
-    `./configure`
+    ./configure
     
-    `make`
+    make
     
-    `sudo make install`
+    sudo make install
 
 Usage:
 ------
