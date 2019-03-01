@@ -6,8 +6,9 @@ This program is an automated command-line tool for afk-fishing in Minecraft, wor
 
 You will need:
 --------------
-  xdotool
-  afk-fishing setup [see: <https://www.youtube.com/watch?v=TJ6CCFoGbig>]
+  - xdotool
+  
+  - afk-fishing setup [see: <https://www.youtube.com/watch?v=TJ6CCFoGbig>]
 
 How to
 ------
@@ -20,6 +21,14 @@ How to
   install brew [see: <https://brew.sh/>]
 
     `brew install xdotool` 
+    
+Installation
+------------
+    `./configure`
+    
+    `make`
+    
+    `sudo make install`
 
 Usage:
 ------
