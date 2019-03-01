@@ -36,4 +36,6 @@ Installation
 
 Usage:
 ------
-Run `mfb --help` for usage.
+Get your best fishing rod and position your cursor on the framework's bottom right corner, then open terminal and run **mfb**.
+
+Run `mfb --help` for tool's usage.
