@@ -18,22 +18,9 @@ Debian based:
 MacOSX:
 
   install brew [see: <https://brew.sh/>]
-  
+
   `brew install xdotool` 
 
 Usage:
 ------
-mfb [OPTIONS] [TIME]
-
-Options:
-
- -s <time>      --sec  <time>   Adds time seconds
-  
- -m <time>      --min  <time>   Adds time minutes
-  
- -h <time>      --hour <time>   Adds time hours
-  
- -i             --nolim         No limit fishing
- 
- -v             --version       Displays version
- 
+Run `mfb --help` for usage.
