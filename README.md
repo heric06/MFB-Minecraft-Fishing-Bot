@@ -2,23 +2,23 @@
 
 Info
 ----
-This program is an automated command-line tool for afk-fishing in Minecraft, working on Unix based operating systems.
+This program is an automated command-line tool for afk-fishing in Minecraft, working on Unix operating systems.
 
 You will need:
 --------------
   - xdotool
   
-  - afk-fishing setup [see: <https://www.youtube.com/watch?v=TJ6CCFoGbig>]
+  - [afk-fishing setup](https://www.youtube.com/watch?v=TJ6CCFoGbig)
 
 How to
 ------
-- Debian based:
+- Debian:
 
     `sudo apt-get install xdotool`
 
 - MacOSX:
 
-  install brew [see: <https://brew.sh/>]
+  install [brew](https://brew.sh/)
 
     `brew install xdotool` 
     
