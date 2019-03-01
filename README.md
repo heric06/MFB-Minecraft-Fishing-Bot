@@ -12,13 +12,17 @@ You will need:
 
 How to
 ------
-- Debian:
+- Linux:
 
     `sudo apt-get install xdotool`
+    
+    `sudo pacman install xdotool`
+    
+    `...`
 
 - MacOSX:
 
-  install [brew](https://brew.sh/)
+  install [brew](https://brew.sh/), then
 
     `brew install xdotool` 
     
