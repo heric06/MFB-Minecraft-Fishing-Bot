@@ -11,15 +11,15 @@ You will need:
 
 How to
 ------
-Debian based:
+- Debian based:
 
-  `sudo apt-get install xdotool`
+    `sudo apt-get install xdotool`
 
-MacOSX:
+- MacOSX:
 
   install brew [see: <https://brew.sh/>]
 
-  `brew install xdotool` 
+    `brew install xdotool` 
 
 Usage:
 ------
