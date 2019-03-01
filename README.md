@@ -1,8 +1,10 @@
-# MFB-Minecraft-Fishing-Bot
+# MFB - Minecraft Fishing Bot 1.05
 
 Info
 ----
 This program is an automated command-line tool for afk-fishing in Minecraft, working on Unix operating systems.
+
+**~322 drops/h** *with maxed out gear*
 
 You will need:
 --------------
